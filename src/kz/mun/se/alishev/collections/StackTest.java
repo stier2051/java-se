@@ -10,11 +10,39 @@ public class StackTest {
         StringReader reader = new StringReader(s);
         StringBuilder sb = new StringBuilder();
         int i;
+        String tag = "";
+        boolean tagIsFound = false;
         while ((i = reader.read()) != -1) {
             if (i == 60) {
-                sb.append((char) i);
-                if (i == 32 || i == 62) System.out.println(sb);
+                sb.append((char)i);
+                while ((i = reader.read()) != -1) {
+                    if (i == 32 || i == 62) {
+                        tag = sb.toString();
+                        tagIsFound = true;
+                        sb.setLength(0);
+                        break;
+                    } else sb.append((char)i);
+                }
+                if (tagIsFound) break;
             }
         }
+        while ((i = reader.read()) != -1) {
+            if (i == 60) {
+                sb.append((char)i);
+                while ((i = reader.read()) != -1) {
+                    if (i == 32 || i == 62 && isOpen(sb.toString())) sb.append((char)i);
+                    
+                }
+
+            }
+        }
+    }
+
+    public static boolean isOpen(String tag) {
+        return tag.equals("<" + tag.substring(1)) && !tag.equals("</" + tag.substring(2));
+    }
+
+    public static boolean isPair(String openTag, String closeTage) {
+        return openTag.equals("<" + openTag) && closeTage.equals("</" + closeTage);
     }
 }
