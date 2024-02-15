@@ -1,9 +1,4 @@
-package kz.mun.se.effective_java.creat_remove_objects;
-
-import kz.mun.se.effective_java.creat_remove_objects.Calzone;
-import kz.mun.se.effective_java.creat_remove_objects.NutritionFactsBuilder;
-import kz.mun.se.effective_java.creat_remove_objects.NyPizza;
-import kz.mun.se.effective_java.creat_remove_objects.Pizza;
+package kz.mun.se.effective_java.create_remove_objects;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
