@@ -1,4 +1,4 @@
-package kz.mun.se.effective_java.creat_remove_objects;
+package kz.mun.se.effective_java.create_remove_objects;
 
 //singleton pattern - с полем public final
 public class SingletonField {
