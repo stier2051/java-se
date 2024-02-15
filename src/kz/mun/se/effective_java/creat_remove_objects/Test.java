@@ -1,9 +1,13 @@
-package kz.mun.se.effective_java;
+package kz.mun.se.effective_java.creat_remove_objects;
+
+import kz.mun.se.effective_java.creat_remove_objects.Calzone;
+import kz.mun.se.effective_java.creat_remove_objects.NutritionFactsBuilder;
+import kz.mun.se.effective_java.creat_remove_objects.NyPizza;
+import kz.mun.se.effective_java.creat_remove_objects.Pizza;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Iterator;
 
 public class Test {
     public static void main(String[] args) {
