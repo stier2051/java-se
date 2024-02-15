@@ -1,4 +1,4 @@
-package kz.mun.se.effective_java;
+package kz.mun.se.effective_java.creat_remove_objects;
 
 import java.util.Objects;
 

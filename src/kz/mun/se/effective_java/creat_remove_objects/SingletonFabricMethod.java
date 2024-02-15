@@ -1,4 +1,4 @@
-package kz.mun.se.effective_java;
+package kz.mun.se.effective_java.creat_remove_objects;
 //singleton pattern - со статической фабрикой
 public class SingletonFabricMethod {
     private static final SingletonFabricMethod INSTANCE = new SingletonFabricMethod();
